@@ -1,0 +1,37 @@
+data:
+  root_dir: 'C:/Chem_Data/MD17'
+  molecules:
+    - 'benzene'
+    - 'uracil'
+    - 'naphtalene'
+    - 'aspirin'
+    - 'salicylic acid'
+    - 'malonaldehyde'
+    - 'ethanol'
+    - 'toluene'
+    - 'paracetamol'
+    - 'azobenzene'
+  subset_size: 25
+  random_seed: 11
+  cutoff_distance: 5.0
+
+training:
+  batch_size: 16
+  learning_rate: 0.001
+  step_lr_step_size: 25
+  step_lr_gamma: 0.25
+  reduce_lr_factor: 0.5
+  reduce_lr_patience: 10
+  reduce_lr_min_lr: 0.000001
+  energy_weight: 1.0
+  force_weight: 0.1
+  huber_delta: 1.0
+  patience: 20
+  checkpoint_path: 'nequip_checkpoint.pt'  
+
+model:
+  hidden_channels: 32
+  num_radial: 20
+  num_layers: 3
+  graph_out_channels: 1
+  force_out_channels: 3
