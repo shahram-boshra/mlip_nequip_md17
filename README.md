@@ -69,8 +69,9 @@ Clone this repository to your local machine:
 
 Bash
 
-git clone [https://github.com/your-username/your-repository-name.git](https://github.com/your-username/your-repository-name.git)
-cd your-repository-name
+git clone https://github.com/shahram-boshra/mlip_nequip_md17.git (git@github.com:shahram-boshra/mlip_nequip_md17.git)
+cd mlip_nequip_md17
+
 Usage
 Python
 
